@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ScentAI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="particle p1"></div>
+<div class="particle p2"></div>
+<div class="particle p3"></div>
+<div class="particle p4"></div>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<img class="perfume perfume-left"
+src="assets/perfume1.png">
+
+<img class="perfume perfume-right"
+src="assets/perfume2.png">
+
+<section class="hero">
+
+<h1>
+Decode Your<br>
+Fragrance
+</h1>
+
+<p>
+Upload your perfume ingredients image and let AI estimate fragrance longevity.
+</p>
+
+<div class="upload-card">
+
+<input
+type="file"
+id="imageInput"
+accept="image/*"
+>
+
+<button id="predictBtn">
+Predict Longevity
+</button>
+
+</div>
+
+<div id="loading" class="loading">
+Analyzing fragrance...
+</div>
+
+<div id="resultCard" class="result-card">
+<img src="assets/sparkle.gif" class="spark spark-top-left">
+<img src="assets/sparkle.gif" class="spark spark-top-right">
+<img src="assets/sparkle.gif" class="spark spark-bottom-left">
+<img src="assets/sparkle.gif" class="spark spark-bottom-right">
+
+<h3>Estimated Fragrance Longevity</h3>
+
+<h2 id="longevityValue">
+--
+</h2>
+
+<div id="notes"></div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
